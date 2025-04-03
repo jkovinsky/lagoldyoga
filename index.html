@@ -65,6 +65,23 @@ body, html {
     min-height: 400px;
   }
 }
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 </style>
 </head>
 <body>
@@ -123,8 +140,8 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="zoom">
   <h3 class="w3-center">ZOOM YOGA</h3>
   <p class="w3-center">I hold donation-based classes online every Wednesday and Friday. After registering, you will receive an email confirmation.</p>
-  <div class="w3-center">
-      <iframe src="https://us02web.zoom.us/meeting/register/uZ0ofuugpzwjlTKtGRw51hDWD15CR-YFow#/registration" height="550" width="750" ></iframe>
+  <div class="video-container">
+      <iframe src="https://us02web.zoom.us/meeting/register/uZ0ofuugpzwjlTKtGRw51hDWD15CR-YFow#/registration"></iframe>
  
   </div>
   <p class="w3-center">Please consider making a donation using <a href="https://account.venmo.com/u/lala2go">venmo</a>.</p>
@@ -140,8 +157,8 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="demo">
   <h3 class="w3-center">DEMO YOGA CLASS</h3>
   <p class="w3-center">Here is an example class.</p>
-  <div class="w3-center">
-      <iframe src="https://www.youtube.com/embed/eABnd7_kq3M?si=AjH_4JqvY2NHiasl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen height="550" width="750"></iframe>
+  <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/eABnd7_kq3M?si=AjH_4JqvY2NHiasl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
  
   </div>
 </div>
